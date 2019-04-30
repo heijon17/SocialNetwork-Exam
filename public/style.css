@@ -1,0 +1,177 @@
+body {
+  background-color: #474973;
+  color: #F1DAC4;
+}
+
+#root {
+  margin: 30px;
+}
+
+/* PostComponent */
+
+.postContainer {
+  padding: 10px;
+  margin: 15px;
+  background-color: #A69CAC;
+}
+
+.postTextContainer{
+  display: flex;
+}
+
+.postMessageContainer {
+  display: block;
+}
+
+.postAuthor {
+  padding: 5px;
+  margin-right: 10px;
+  border: #272635 solid 1px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.postTitle {
+  font-size: 1.5em;
+}
+
+.headerText {
+  margin-right: 50%;
+  margin-left: 50%;
+}
+
+.infoText {
+  margin-right: 15px;
+}
+
+/*
+Flash animation:https://codepen.io/iPawan/pen/BKkCo
+*/
+.requestFlash{
+  background-color: #A69CAC;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
+.nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background-color: #161B33;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+
+}
+
+.nav a:hover {
+  background-color: rgb(36, 44, 91);
+}
+
+.menuLink {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+#inputSeach {
+  margin-top: 17px;
+}
+
+.nav .menuLink:hover {
+  background-color: rgb(36, 44, 91);
+}
+
+.link {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  background-color: #161B33;
+}
+
+.chatComponent {
+  border-radius: 2%;
+  padding: 15px;
+  position: fixed;
+  right: 50px;
+  top: 200px;
+  background-color: #272635;
+  -webkit-box-shadow: 10px 10px 31px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 31px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 31px -8px rgba(0,0,0,0.75);
+  
+}
+
+
+
+.mainContainer{
+  display: inline-flex;
+  width: 100%;
+}
+
+.rightContainer {
+  width: 30%;
+  padding: 1em;
+}
+
+.leftContainer {
+  width: 70%;
+  padding: 1em;
+}
+
+
+.btn {
+  width: 90px;
+  height: 20px;
+  background-color: #F1DAC4;
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Table */
+
+table.redTable {
+  color: black;
+  border: 2px solid #161B33;
+  background-color: #A69CAC;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+  border: 1px solid #272635;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 20px;
+}
